@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    
+    
+
+    <title>weather App</title>
+</head>
+<body>
+    <main>
+        <div id="background">
+        </div>
+
+        <section id="dataContainer">
+            <div id="leftSide">
+                <div id="dayLocation">
+                    <div id="day">
+                        <h1>Tuesday</h1>
+                        <p>20 Jun 2022</p>
+                    </div>
+                    <div id="location">
+                        <span>
+                            <i><i class="ri-map-pin-line"></i></i>
+                        </span>
+
+                        <span>
+                            Biarritz, FR
+                        </span>
+                    </div>
+
+                </div>
+
+                <div id="weathersky">
+                    <div id="weather">
+                        <i></i>
+                    </div>
+                    <div id="temperature">
+                        <h1></h1>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+            <div id="rightSide">
+                <form id="weatherForm">
+
+
+                    <div id="inputsData">
+                        <div class="input-group">
+                        <label for="countrySelect">Country:</label>
+                        <div id="input">
+                            <div class="country-select-container">
+                                <select id="countrySelect">
+                                </select>
+                                <span class="select-arrow"></span>
+                            </div>
+                        <button type="button" id="getLocation" class="location-btn" title="Get Current Location">
+                        <i class="ri-map-pin-line"></i>
+                        </button>
+                        </div>
+                                                
+                        </div>
+                                            
+                        <div class="input-group">
+                            <div id="calander">
+
+                            </div>
+                        
+                        </div>                        
+                    </div>
+                    
+            
+                    <button type="submit" class="submit-btn">Get Weather</button>
+                </form>
+            
+            </div>
+
+        </section>
+
+    </main>
+    
+
+
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    
+    </body>
+</html>

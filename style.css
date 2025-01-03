@@ -1,0 +1,451 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
+
+body{
+    
+    width: 100dvw;
+    height: 100dvh;
+    overflow: hidden;
+}
+
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    
+}
+
+#background{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+
+    background: linear-gradient(152deg, rgba(235, 123, 32, 0.9) -0.04%, rgba(105, 83, 230, 0.9) 60%);
+    
+    
+}
+
+
+
+#rightSide{
+    
+    width: 944px;
+    height: 623px;
+    border-radius: 25px;
+    background: rgba(34, 40, 49, 0.60);
+    
+    z-index: -1;
+}
+
+
+#leftSide{
+    display: flex;
+    flex-direction: column;
+    padding: 38px;
+    position: absolute;
+    z-index: 1;
+    top: 13%;
+    gap: 280px;
+    width: 493px;
+    height: 666px;
+    border-radius: 30px;
+    background:
+    linear-gradient(152deg,
+     rgba(41, 223, 255, 0.1) -0.04%,
+     rgba(83, 91, 230, 0.4) 60%),
+    
+     url('https://images.unsplash.com/photo-1562155955-1cb2d73488d7?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+   
+    flex-shrink: 0;
+}
+
+#day h1{
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 18px;
+}
+
+#day p{
+    width: 154px;
+    height: 36px;
+    flex-shrink: 0;
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 8px;
+}
+
+
+#location{
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+#weathersky {
+    width: fit-content;
+    height: fit-content;
+    color: #FFF;
+}
+
+
+#weather{
+    font-size: 62px;
+}
+
+#temperature h1{
+    font-family: Montserrat;
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+#temperature p{
+    font-size: 18px;
+    flex-shrink: 0;
+    font-family: Montserrat;
+    
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+
+
+#rightSide {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+}
+
+#weatherForm{
+    font-family: Montserrat;
+    width: 370px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    
+    padding: 20px;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0);
+    backdrop-filter: blur(60px);
+}
+
+#inputsData{
+    display: flex;
+    flex-direction: column;
+    
+    height: 100%;
+}
+
+
+.input-group {
+
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: #FFF;
+    
+}
+
+
+#input{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+
+.country-select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.1);
+    color: #FFF;
+    
+}
+
+.location-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    border: none;
+    background: rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+}
+
+.location-btn{
+    
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+
+.date-input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    background: linear-gradient(120deg, rgba(41, 223, 255, 0.9) -0.04%, rgba(83, 91, 230, 0.90) 100%);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.submit-btn:hover {
+    background: linear-gradient(120deg,  rgba(83, 91, 230, 0.90) 60%  rgba(41, 223, 255, 0.9) -0.04%,);
+}
+
+
+
+
+
+.country-select-container {
+    position: relative;
+    width: 100%;
+}
+
+#countrySelect {
+    width: 100%;
+    padding: 12px 16px;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(60px);
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+#countrySelect:focus {
+    outline: none;
+    border-color: rgba(41, 223, 255, 0.5);
+    box-shadow: 0 0 0 2px rgba(41, 223, 255, 0.2);
+}
+
+#countrySelect option {
+    background: rgba(34, 40, 49, 0.95);
+    backdrop-filter: blur(60px);
+    color: #FFF;
+    padding: 12px;
+    font-family: Montserrat;
+    font-size: 14px;
+}
+
+#countrySelect option:hover {
+    background: rgba(41, 223, 255, 0.2);
+    backdrop-filter: blur(60px);
+}
+
+.select-arrow {
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    border-style: solid;
+    border-width: 6px 6px 0 6px;
+    border-color: #FFF transparent transparent transparent;
+}
+
+#countrySelect:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(60px);
+}
+
+/* Custom scrollbar for dropdown */
+#countrySelect::-webkit-scrollbar {
+    width: 8px;
+}
+
+#countrySelect::-webkit-scrollbar-track {
+    background: rgba(34, 40, 49, 0.60);
+    backdrop-filter: blur(60px);
+}
+
+#countrySelect::-webkit-scrollbar-thumb {
+    background: rgba(41, 223, 255, 0.5);
+    border-radius: 4px;
+}
+
+#countrySelect::-webkit-scrollbar-thumb:hover {
+    background: rgba(41, 127, 255, 0.7);
+}
+
+
+
+
+/*calander*/
+.flatpickr-months,
+.flatpickr-weekdays,
+.dayContainer {
+    width: 100% !important;
+    max-width: 100% !important;
+    background: transparent !important;
+    color: #091122 !important;
+}
+
+.flatpickr-day {
+    color: #091122 !important;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+}
+
+.flatpickr-current-month,
+.flatpickr-monthDropdown-months,
+.flatpickr-weekday {
+    color: #091122 !important;
+}
+
+.flatpickr-day.selected {
+    background: linear-gradient(152deg, rgba(41, 223, 255, 0.9) -0.04%, rgba(83, 91, 230, 0.90) 60%) !important;
+    color: #FFF !important;
+}
+
+.flatpickr-day:hover {
+    color: #091122 !important;
+}
+
+
+
+/*Responsive*/
+
+
+/* Tablet Styles */
+/* Tablet Styles */
+@media screen and (max-width: 768px) {
+    main {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+        display: flex;
+        gap: 20px;
+    }
+
+    #leftSide {
+        position: relative;
+        width: 100%;
+        height: auto;
+        order: 2; /* Move to bottom */
+        top: 0;
+        gap: 100px;
+        margin: 0;
+    }
+
+    #rightSide {
+        width: 100%;
+        height: auto;
+        order: 1; /* Move to top */
+        margin: 0;
+    }
+
+    #weatherForm {
+        width: 100%;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    #weather {
+        font-size: 48px;
+    }
+
+    #temperature h1 {
+        font-size: 32px;
+    }
+}
+
+/* Mobile Styles */
+@media screen and (max-width: 480px) {
+    body {
+        overflow-y: auto;
+    }
+
+    main {
+        padding: 10px;
+        gap: 15px;
+    }
+
+    #leftSide {
+        padding: 20px;
+        gap: 50px;
+        order: 2; /* Keep at bottom */
+    }
+
+    #rightSide {
+        order: 1; /* Keep at top */
+    }
+}
+
+/*small mobile */
+
+
+    @media screen and (max-width: 320px) {
+    #leftSide {
+        padding: 15px;
+        gap: 30px;
+    }
+
+    #day h1 {
+        font-size: 24px;
+    }
+
+    #weather {
+        font-size: 32px;
+    }
+
+    #weatherForm {
+        padding: 10px;
+    }
+}
